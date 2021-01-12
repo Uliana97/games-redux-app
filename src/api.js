@@ -31,6 +31,9 @@ const lastDate = `${year - 1}-${month}-${day}`;
 const nextDate = `${year + 1}-${month}-${day}`;
 
 //POPULAR_GAMES
-const popularGames = `games/?dates=${lastDate}, ${date}&ordering=-raiting&page_size=10`;
+const popularGames = `games?dates=${lastDate},${date}&ordering=-rating&page_size=10`;
 
-const popularGamesURL = () => `${baseUrl}${popularGames}`;
+export const popularGamesURL = () => `${baseUrl}${popularGames}`;
+
+//https://api.rawg.io/api/games?dates=2001-01-01,2001-12-31&ordering=-rating
+//https://api.rawg.io/api/games/?dates=2020-01-12,2021-01-12&ordering=-raiting&page_size=10

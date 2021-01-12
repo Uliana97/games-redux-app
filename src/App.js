@@ -1,16 +1,16 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 
-import { inc } from "./actions";
+import { fetchGames } from "./actions";
 
 const App = () => {
-  const counter = useSelector((store) => store.counter);
+  // const games = useSelector((store) => store.games.popular);
   const dispatch = useDispatch();
 
   return (
     <>
-      <div>Counter = {counter}</div>
-      <button onClick={() => dispatch(inc())}>Increment</button>
+      {/* <div>{games}</div> */}
+      <button onClick={() => dispatch(fetchGames())}>Fetch</button>
     </>
   );
 };

@@ -1,9 +1,7 @@
 import { combineReducers } from "redux";
 
-import { counterReducer } from "./counterReducer";
-import { loggedReducer } from "./loggedReducer";
+import { gameReducer } from "./gameReducer";
 
-export const allReducers = combineReducers({
-  counter: counterReducer,
-  logged: loggedReducer,
+export const rootReducer = combineReducers({
+  games: gameReducer,
 });

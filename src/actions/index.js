@@ -1,1 +1,1 @@
-export { inc } from "./counter";
+export { fetchGames } from "./gamesActions";
